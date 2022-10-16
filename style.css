@@ -62,3 +62,31 @@ body {
     flex-direction: column;
   }
 }
+
+/* footer  */
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  color: var(--secondary-text-color);
+  border: 1rem;
+}
+
+.footer .link {
+  color: var(--secondary-text-color);
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  /* this is for overwriting browser default padding defination */
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+/* footer */
