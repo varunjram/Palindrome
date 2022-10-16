@@ -27,7 +27,10 @@ body {
 }
 .defination {
   border: 0.2rem dashed rgb(118, 91, 167);
+  width: 80%;
+  margin: auto;
   margin-top: 5rem;
+  padding-bottom: 1.5rem;
 }
 
 .content {
