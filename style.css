@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+  background-color: rgba(19, 56, 50, 0.183);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 0.2rem dashed rgb(118, 91, 167);
+  padding-bottom: 3rem;
+  width: 400px;
+  margin: auto;
+}
+
+#output {
+  width: 300px;
+  line-height: 1.5rem;
+}
+
+#validate {
+  padding: 0.5rem;
+  width: 5rem;
+  margin: 1rem;
+}
+.defination {
+  border: 0.2rem dashed rgb(118, 91, 167);
+  margin-top: 5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.content h1 {
+  position: absolute;
+  top: 0;
+}
+
+.content p {
+  text-align: justify;
+  padding: 1rem;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.content img {
+  width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Tablets [601px -> 1200px]*/
+  .content {
+    flex-direction: column;
+  }
+}
