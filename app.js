@@ -40,12 +40,12 @@ function getALlDateFormat(date) {
 
   let ddmmyyyy = day + month + year;
   let mmddyyyy = month + day + year;
-  let yyymmdd = year + month + day;
+  let yyyymmdd = year + month + day;
   let ddmmyy = day + month + year.slice(-2);
   let mmddyy = month + day + year.slice(-2);
   let yymmdd = year.slice(-2) + month + day;
 
-  return [ddmmyyyy, mmddyyyy, yyymmdd, ddmmyy, mmddyy, yymmdd];
+  return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd];
 }
 
 function checkPalindrome(date) {
@@ -144,8 +144,7 @@ function clickHandler() {
     } else {
       let [counter, {day, month, year}] = getNextPalindrome(date);
       //   console.log(getNextPalindrome(date));
-
-      output.innerText = `Sorry your birthday is not a Palindrome. Next nearest date is ${day}-${month}-${year}, and you have missed this by ${counter}`;
+      output.innerText = `Sorry your birthday is not a Palindrome. Next nearest date is ${day}-${month}-${year}, and you have missed this by ${counter} Days`;
     }
   }
 }
