@@ -1,5 +1,7 @@
 # Palindrome Birthday Checker
 
+![preview](https://raw.githubusercontent.com/varunjram/Palindrome/master/assets/demo-view.png)
+
 Netlify - https://plaindromebirthday.netlify.app/
 
 Feature:
