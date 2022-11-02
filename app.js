@@ -16,18 +16,17 @@ function isPalindrome(str) {
 
 function dateToString(date) {
   let dateStr = {day: "", month: "", year: ""};
-
   let {day, month, year} = date;
 
   if (day < 10) {
     dateStr.day = "0" + day;
   } else {
-    dateStr.day = day;
+    dateStr.day = day.toString();
   }
   if (month < 10) {
     dateStr.month = "0" + month;
   } else {
-    dateStr.month = month;
+    dateStr.month = month.toString();
   }
   dateStr.year = year.toString();
   return dateStr;
@@ -51,7 +50,7 @@ function getALlDateFormat(date) {
 function checkPalindrome(date) {
   let listOfDateFormates = getALlDateFormat(date);
 
-  let palindrome = false;
+  let palindrome;
 
   for (let i = 0; i < listOfDateFormates.length; i++) {
     if (isPalindrome(listOfDateFormates[i])) {
@@ -130,6 +129,7 @@ function getNextPalindrome(date) {
 
 function clickHandler() {
   let bdayStr = inputdate.value;
+  console.log(bdayStr);
 
   if (bdayStr !== "") {
     let listOfDate = bdayStr.split("-");
@@ -140,12 +140,14 @@ function clickHandler() {
     };
     let isPalindrome = checkPalindrome(date);
     if (isPalindrome) {
-      output.innerText = "Yay! Your Biethday is a palindrome 🎉✨🎆👏👏👏";
+      output.innerText = "Yay! Your Birthday is a palindrome 🎉✨🎆👏👏👏";
     } else {
       let [counter, {day, month, year}] = getNextPalindrome(date);
       //   console.log(getNextPalindrome(date));
       output.innerText = `Sorry your birthday is not a Palindrome. Next nearest date is ${day}-${month}-${year}, and you have missed this by ${counter} Days`;
     }
+  } else {
+    alert("PLease select the date");
   }
 }
 
